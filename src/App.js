@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import {useState} from "react";
 import './App.css';
 import Listing from "./components/Listing";
@@ -19,9 +20,9 @@ function App() {
 
     return (
         <div className="item-list"> {
-            offers.
-            filter(offer => offer.state != 'removed').
-            map(offer => {
+            offers
+            .filter(offer => offer.state != 'removed')
+            .map(offer => {
                 return <Listing
                     key={offer.listing_id}
                     currency_code={offer.currency_code}
